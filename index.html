@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="/sass/style.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -17,7 +18,7 @@
 
 <body>
 	<header class="header">
-		<div class="conteiner">
+		<div class="container header__container">
 			<a href="#" class="logo">
 				<object type="image/svg+xml" data="img/img-logo/Logo.svg" class="logo-object">
 					Your browser does not support SVG
@@ -25,10 +26,10 @@
 			</a>
 			<nav class="header__navigation">
 				<ul class="navigation">
-					<li>Home</li>
-					<li>Services</li>
-					<li>About</li>
-					<li>Product</li>
+					<li class="navigation__link">Home</li>
+					<li class="navigation__link">Services</li>
+					<li class="navigation__link">About</li>
+					<li class="navigation__link">Product</li>
 				</ul>
 			</nav>
 			<div class="header__buttons">
@@ -39,7 +40,7 @@
 	</header>
 	<main class="main">
 		<section class="promo">
-			<div class="conteiner">
+			<div class="container promo__container">
 				<div class="promo__content">
 					<h1>The Design Thinking superpowers</h1>
 					<p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to
@@ -53,9 +54,9 @@
 						</a>
 					</div>
 				</div>
-			</div>
-			<img src="img/img-header/promo.png" class="promo__image" alt="The Design Thinking superpowers">
-			</div>
+				<div>
+					<img src="img/img-header/promo.png" class="promo__image" alt="The Design Thinking superpowers">
+				</div>
 			</div>
 		</section>
 		<section class="tools">

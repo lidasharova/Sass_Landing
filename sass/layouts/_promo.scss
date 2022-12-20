@@ -1,0 +1,47 @@
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo {
+  padding: 30px 0px;
+}
+
+.promo__content {
+  padding-right: 64px;
+}
+
+.promo__content p {
+  font-family: 'Poppins', Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: $color-text;
+}
+
+.promo__buttons > * {
+  margin-right: 44px;
+  font-family: 'Open Sans', Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  height: 53px;
+  width: 174px;
+}
+
+.link-button {
+  font-family: 'Poppins', Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-primary;
+}
+
+.ico {
+}
+
+.ico_play {
+  color: $color-primary;
+}
