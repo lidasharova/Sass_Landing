@@ -1,0 +1,30 @@
+.logo-path {
+  @extend %transition;
+}
+
+.logo-svg:hover {
+  .logo-path {
+    fill: $color-primary;
+  }
+}
+
+.header__logo-line {
+  @include media-tablet {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  @include media-tablet {
+    padding-top: 5px;
+    display: block;
+  }
+}
+
+.logo-svg {
+  @include media-mobile {
+    width: 158px;
+    height: 27px;
+  }
+}
