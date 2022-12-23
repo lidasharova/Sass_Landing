@@ -142,4 +142,7 @@ $img-top: 8px;
     right: 330px;
     transition: all ease 1s;
   }
+  @include media-mobile {
+    position: static;
+  }
 }
