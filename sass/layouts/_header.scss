@@ -9,22 +9,21 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  line-height: 2.8rem;
-  font-size: 1.5rem;
-  text-align: left;
-}
-
-.navigation__link {
-  list-style: none;
-  padding: 0 10px;
-  cursor: pointer;
+  @include media-mobile {
+    padding-left: 21px;
+    padding-top: 23px;
+  }
 }
 
 .header__buttons button:first-child {
   margin-right: 14px;
+  @include media-tablet {
+    margin-right: 15px;
+  }
+}
+
+.header__buttons {
+  @include media-mobile {
+    display: none;
+  }
 }

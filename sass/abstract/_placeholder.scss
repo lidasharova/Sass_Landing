@@ -1,0 +1,18 @@
+//можно описать действие(%transition) и применить его к необходимым блокам(с помощью @extend ) , при компиляции sass все блоки соберет вместе и применит к ним одинаковое действие что экономит место без дублирования одного и того же кода//
+
+%transition {
+  transition: all 0.3s ease-out;
+}
+
+%font-prim {
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+%font-add {
+  font-family: 'Poppins', Verdana, sans-serif;
+}
+
+%color-heading {
+  color: $color-heading;
+}
+

@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.header__navigation {
+  @include media-tablet {
+    display: none;
+  }
+}

@@ -8,15 +8,17 @@ $color-heading: #2f281e;
 $color-text: #544837;
 $color-border: #d7d7d7;
 $color-light: #ffffff;
-$color-border-button:#bcd0e5;
-$color-button-text:#173A56;
+$color-border-button: #bcd0e5;
+$color-button-text: #173a56;
+$color-hamburger-line: #173a56;
 
 $color-violet: #7752be;
 $color-orange: #fab005;
 $color-red: #f03e3d;
 $color-blu: #4dadf7;
 
-$content-width: 1197px;
+//media-query
+$laptop-width: 1197px;
 $tablet-width: 768px;
 $mobile-big-width: 414px;
 $mobile-small-width: 320px;

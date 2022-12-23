@@ -1,0 +1,147 @@
+// position of photo employees
+$img-left: 230px;
+$img-top: 8px;
+
+.about-us {
+  padding: 96px 0 101px 0;
+  @include media-tablet {
+    padding: 49px 0 33px 0;
+  }
+  @include media-mobile {
+    padding: 0px;
+  }
+}
+.about-us__header {
+  @extend %font-prim;
+  @include font(3.4rem, 4.6rem, 700);
+  text-align: left;
+  @include media-mobile {
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+  @include media-tablet {
+    margin: 0 0 33px 0;
+    text-align: center;
+  }
+}
+
+.about-us__text {
+  @extend %font-prim;
+  @include font(1.6rem, 2.6rem, 400);
+  text-align: left;
+  color: $color-text;
+  margin: 14px 0 45px 0;
+  @include media-tablet {
+    margin: 0 0 33px 0;
+    text-align: center;
+  }
+  @include media-mobile {
+    text-align: center;
+  }
+}
+
+.employee__item {
+  width: 377px;
+  height: 141px;
+  @include media-mobile {
+    width: 333px;
+  }
+}
+
+.employee_none {
+  @include media-mobile {
+    display: none;
+  }
+}
+.employee__container {
+  width: 335px;
+  height: 141px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include media-mobile {
+    width: 315px;
+  }
+}
+
+.employee__content {
+  margin: 36px 0 35px 0;
+  @extend %font-prim;
+  margin-left: 35px;
+  h5 {
+    @include font(1.6rem, 2.6rem, 700);
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.employee__title,
+.employee-mail {
+  @include font(1.4rem, 2.6rem, 400);
+  margin: 0;
+}
+
+.employee__img {
+  position: absolute;
+  top: $img-top;
+  left: $img-left;
+  @include media-mobile {
+    left: 200px;
+  }
+}
+
+.circles {
+  height: 8px;
+  width: 35px;
+  display: none;
+  @include media-tablet {
+    display: flex;
+    margin: 33px auto 50px auto;
+  }
+  @include media-mobile {
+    display: flex;
+    margin: 27px auto 40px auto;
+  }
+}
+
+.circles__item {
+  height: 8px;
+  width: 9px;
+  background-image: url('/img/img-imployees/Ellipse\ 4.svg');
+}
+
+.circles__item_color {
+  height: 8px;
+  width: 9px;
+  background-image: url('/img/img-imployees/Ellipse\ 3.svg');
+  margin: 0 4.5px 0 4.5px;
+}
+
+.slider-container {
+  @include media-tablet {
+    width: 768px;
+    height: 175px;
+    overflow: hidden;
+  }
+}
+
+.slider-line {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    height: 141px;
+    position: relative;
+    right: 330px;
+    transition: all ease 1s;
+  }
+  @include media-tablet {
+    position: static;
+  }
+}

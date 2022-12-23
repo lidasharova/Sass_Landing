@@ -1,0 +1,24 @@
+.layout-4-column {
+  @include columns(21%);
+  // @include media-tablet {
+  //   @include columns(45%);
+  // }
+  // @include media-mobile {
+  //   @include columns(100%);
+  // }
+}
+
+.layout-3-column {
+  @include columns(30%);
+}
+
+.layout-2-column {
+  @include columns(48%);
+  // @include media-tablet {
+  //   @include columns(50%);
+  // }
+  @include media-mobile {
+    @include columns(100%);
+    width: 333px;
+  }
+}

@@ -1,35 +1,66 @@
 .button {
+  @extend %font-prim;
+  @include font(1.6rem, 2.2rem, 600, normal);
   height: 4.6rem;
   width: 10.5rem;
   border-radius: 0px;
   padding: 11px 0 13px 0;
-  font-family: 'Open Sans', Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  transition: all 0.3s;
+  @extend %transition;
+  &_bordered {
+    background: $color-light;
+    border: 1px solid $color-border-button;
+    color: $color-button-text;
+    &:hover {
+      background: $color-border-button;
+    }
+  }
+  &_colored {
+    background: $color-primary;
+    color: $color-light;
+    border: 1px solid $color-primary;
+    &:hover {
+      background: $color-additional;
+      border-color: $color-additional;
+    }
+  }
 }
 
-.button_bordered {
-  background: $color-light;
-  border: 1px solid $color-border-button;
-  color: $color-button-text;
+.promo__buttons > * {
+  @include font(1.6rem, 2.2rem, 700, normal);
+  height: 53px;
+  width: 174px;
+  margin-right: 44px;
+  @include media-tablet {
+    margin-right: 22px;
+  }
+  @include media-mobile {
+    margin: 23px 0 25px 0;
+    padding: 0;
+  }
 }
 
-.button_colored {
-  background: $color-primary;
-  color: $color-light;
-  border: 1px solid $color-primary;
+.link-button {
+  @extend %font-add;
+  @include font(1.6rem, 2.3rem, 600, normal);
+  color: $color-primary;
+  display: inline-flex;
+  align-items: center;
+  @include media-tablet {
+    margin-right: 0px;
+  }
+  @include media-mobile {
+    margin: 0 0 49px 0;
+    width: 171px;
+    height: 23px;
+  }
 }
 
-.button_colored:hover {
-  background: $color-additional;
-  border-color: $color-additional;
-}
-
-.button_bordered:hover {
-  background: $color-border-button;
+.link-button__text {
+  padding-left: 10px;
+  @extend %transition;
+  &:hover {
+    color: $color-additional;
+  }
 }

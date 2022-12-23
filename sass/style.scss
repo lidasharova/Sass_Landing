@@ -1,13 +1,29 @@
+@import 'base/normalize';
+
+// Abstract
 @import 'abstract/constants';
+@import 'abstract/mixins';
+@import 'abstract/placeholder';
 
 // Base
 @import 'base/base';
 @import 'base/buttons';
+@import 'base/logo';
+@import 'base/icons';
+@import 'base/block-item';
+@import 'base/hamburger';
 
 // Layouts
 @import 'layouts/container';
 @import 'layouts/header';
-@import 'layouts/promo';
+@import 'layouts/colums';
+@import 'layouts/footer';
 
 // Components
 @import 'components/contact-us';
+@import 'components/promo';
+@import 'components/navigation';
+@import 'components/tools';
+@import 'components/strategies';
+@import 'components/tags';
+@import 'components/about-us';

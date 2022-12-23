@@ -1,0 +1,111 @@
+.tools-container {
+  background-image: url('/img/img-tools/Bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+  padding-bottom: 90px;
+  @include media-mobile {
+    padding: 0 21px 0 21px;
+    margin: 0;
+    height: 899px;
+  }
+}
+.tools-container {
+  @include media-tablet {
+    flex-wrap: wrap;
+    .tool {
+      flex-basis: 45%;
+    }
+  }
+
+  @include media-mobile {
+    .tool {
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+  }
+}
+.tools__title {
+  text-align: center;
+  align-items: center;
+  max-width: 462px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 111px;
+  @include media-tablet {
+    margin-top: 78px;
+    margin-bottom: 51px;
+  }
+  @include media-mobile {
+    margin: 29px 0 43px 0;
+  }
+}
+
+.tool__ico {
+  height: 50px;
+  width: 55px;
+  border-radius: 19px;
+  margin-bottom: 30px;
+  display: inline-block;
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+  @include media-mobile {
+    margin-bottom: 8px;
+  }
+}
+
+.tool__icon_purple {
+  background-image: url('/img/img-tools/icon\ 1.svg');
+}
+
+.tool__icon_orange {
+  background-image: url('/img/img-tools/icon\ 2.svg');
+}
+
+.tool__icon_red {
+  background-image: url('/img/img-tools/icon\ 3.svg');
+}
+
+.tool__icon_blue {
+  background-image: url('/img/img-tools/icon\ 4.svg');
+}
+
+.tool__content {
+  margin-bottom: 60px;
+  @include media-mobile {
+    margin: 0;
+  }
+}
+
+.tool__text {
+  max-width: 262px;
+  color: $color-text;
+
+  @include media-tablet {
+    text-align: center;
+  }
+  @include media-mobile {
+    @include font(1.6rem, 2.6rem, 400);
+    margin-bottom: 47px;
+    margin-top: 0;
+    max-width: 333px;
+  }
+}
+
+.tool-button {
+  text-align: center;
+}
+.tool-button button {
+  text-align: center;
+  height: 53px;
+  width: 172px;
+}
+
+.tool {
+  @include media-tablet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

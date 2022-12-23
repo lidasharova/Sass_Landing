@@ -1,3 +1,130 @@
 .contact-us {
   background-color: $color-background;
+  padding: 62px 82px;
+  @include media-tablet {
+    text-align: center;
+    padding: 48px 0 0 0;
+  }
+  @include media-mobile {
+    padding: 34px 0 49px 0;
+    text-align: center;
+  }
 }
+
+.contact-us__line {
+  margin-bottom: 19px;
+  @include media-mobile {
+    padding: 41px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact-us__form {
+  @include media-tablet {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  @include media-mobile {
+    padding: 0;
+    width: 333px;
+  }
+  input,
+  textarea {
+    border: none;
+    border: 1px solid $color-light;
+    background-color: $color-light;
+    padding: 10px 21px;
+    border-radius: 5px;
+  }
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+  }
+}
+textarea {
+  resize: none;
+  width: 577px;
+  height: 179px;
+  @include media-tablet {
+    width: 100%;
+  }
+}
+
+input {
+  width: 280px;
+  height: 45px;
+  margin-bottom: 18px;
+}
+
+.contact-us__button {
+  > * {
+    min-width: 117px;
+    @include media-tablet {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    @include media-mobile {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-content__text {
+  width: 528px;
+  margin: 17px 91px 33px 0;
+  padding: 0 15px 0 0;
+  @include media-tablet {
+    text-align: center;
+    width: 671px;
+    margin: 0;
+    padding: 17px 0 26px 0;
+  }
+  @include media-mobile {
+    width: 333px;
+    text-align: center;
+    margin: 8px 0 24px;
+    padding: 0;
+  }
+}
+.contacts-container {
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+  @include media-mobile {
+    margin-bottom: 41px;
+  }
+}
+.contacts {
+  align-items: center;
+  justify-content: center;
+  @include font(2.5rem, 2.6rem, 400);
+  margin: 0 0 19px 0;
+
+  > a {
+    text-decoration: none;
+    color: $color-text;
+    margin-left: 11px;
+  }
+}
+
+.contact-us__content {
+  @include media-tablet {
+    text-align: center;
+    width: 671px;
+  }
+  @include media-mobile {
+    width: 100%;
+  }
+}
+
+// .input-container {
+//   @include media-tablet {
+//     flex-basis: 48%;
+//     width: 100%;
+//   }
+// }

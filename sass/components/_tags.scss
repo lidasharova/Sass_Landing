@@ -1,0 +1,25 @@
+.tags {
+  display: flex;
+  > * {
+    margin-right: 7px;
+  }
+  @include media-tablet {
+    justify-content: center;
+  }
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0px 14px 0px 14px;
+  @include font(1.3rem, 2.8rem, 400);
+  &_selected {
+    background-color: $color-primary;
+  }
+  &_colored {
+    background-color: $color-light;
+    border: 1px solid rgba(215, 215, 215, 1);
+  }
+  &_bordered {
+    background-color: $color-tag;
+  }
+}
