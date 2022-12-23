@@ -1381,6 +1381,9 @@ input {
   }
 }
 
+.slider-line {
+  position: static;
+}
 @media (max-width: 768px) {
   .slider-line {
     display: flex;
@@ -1390,11 +1393,6 @@ input {
     position: relative;
     right: 330px;
     transition: all ease 1s;
-  }
-}
-@media (max-width: 768px) {
-  .slider-line {
-    position: static;
   }
 }
 
