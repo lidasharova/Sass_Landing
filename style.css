@@ -419,24 +419,24 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("/img/img-icons/ico-play.svg");
+  background-image: url("img/img-icons/ico-play.svg");
   height: 19px;
   width: 18.5px;
   background-repeat: no-repeat;
 }
 .ico_play:hover {
-  background-image: url("/img/img-icons/ico-play-add.svg");
+  background-image: url("img/img-icons/ico-play-add.svg");
 }
 
 .ico_phone {
-  background-image: url("/img/img-icons/ico_phone.svg");
+  background-image: url("img/img-icons/ico_phone.svg");
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
 }
 
 .ico_mail {
-  background-image: url("/img/img-icons/ico_mail.svg");
+  background-image: url("img/img-icons/ico_mail.svg");
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
@@ -966,7 +966,7 @@ input {
 }
 
 .tools-container {
-  background-image: url("/img/img-tools/Bg.png");
+  background-image: url("img/img-tools/Bg.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%;
@@ -1034,19 +1034,19 @@ input {
 }
 
 .tool__icon_purple {
-  background-image: url("/img/img-tools/icon 1.svg");
+  background-image: url("img/img-tools/icon 1.svg");
 }
 
 .tool__icon_orange {
-  background-image: url("/img/img-tools/icon 2.svg");
+  background-image: url("img/img-tools/icon 2.svg");
 }
 
 .tool__icon_red {
-  background-image: url("/img/img-tools/icon 3.svg");
+  background-image: url("img/img-tools/icon 3.svg");
 }
 
 .tool__icon_blue {
-  background-image: url("/img/img-tools/icon 4.svg");
+  background-image: url("img/img-tools/icon 4.svg");
 }
 
 .tool__content {
