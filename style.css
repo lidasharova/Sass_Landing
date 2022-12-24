@@ -1395,5 +1395,10 @@ input {
     transition: all ease 1s;
   }
 }
+@media (max-width: 414px) {
+  .slider-line {
+    position: static;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
