@@ -144,5 +144,6 @@ $img-top: 8px;
   }
   @include media-mobile {
     position: static;
+    right: 0px;
   }
 }
