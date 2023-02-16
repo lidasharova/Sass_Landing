@@ -15,7 +15,7 @@
 }
 
 @mixin media-laptop {
-  @media (max-width: $laptop-width) {
+  @media (max-width: $laptop-width) and (min-width: $tablet-width) {
     @content;
   }
 }

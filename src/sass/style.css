@@ -419,24 +419,24 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("/img/img-icons/ico-play.svg");
+  background-image: url("/src/img/img-icons/ico-play.svg");
   height: 19px;
   width: 18.5px;
   background-repeat: no-repeat;
 }
 .ico_play:hover {
-  background-image: url("/img/img-icons/ico-play-add.svg");
+  background-image: url("/src/img/img-icons/ico-play-add.svg");
 }
 
 .ico_phone {
-  background-image: url("/img/img-icons/ico_phone.svg");
+  background-image: url("/src/img/img-icons/ico_phone.svg");
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
 }
 
 .ico_mail {
-  background-image: url("/img/img-icons/ico_mail.svg");
+  background-image: url("/src/img/img-icons/ico_mail.svg");
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
@@ -505,7 +505,7 @@ h5 {
   max-width: 1197px;
   margin: auto;
 }
-@media (max-width: 1197px) {
+@media (max-width: 1197px) and (min-width: 768px) {
   .container {
     padding: 0 46px;
   }
@@ -966,7 +966,7 @@ input {
 }
 
 .tools-container {
-  background-image: url("/img/img-tools/Bg.png");
+  background-image: url("/src/img/img-tools/Bg.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%;
@@ -1034,19 +1034,19 @@ input {
 }
 
 .tool__icon_purple {
-  background-image: url("/img/img-tools/icon 1.svg");
+  background-image: url("/src/img/img-tools/icon 1.svg");
 }
 
 .tool__icon_orange {
-  background-image: url("/img/img-tools/icon 2.svg");
+  background-image: url("/src/img/img-tools/icon 2.svg");
 }
 
 .tool__icon_red {
-  background-image: url("/img/img-tools/icon 3.svg");
+  background-image: url("/src/img/img-tools/icon 3.svg");
 }
 
 .tool__icon_blue {
-  background-image: url("/img/img-tools/icon 4.svg");
+  background-image: url("/src/img/img-tools/icon 4.svg");
 }
 
 .tool__content {
@@ -1363,13 +1363,13 @@ input {
 .circles__item {
   height: 8px;
   width: 9px;
-  background-image: url("/img/img-imployees/Ellipse 4.svg");
+  background-image: url("/src/img/img-imployees/Ellipse 4.svg");
 }
 
 .circles__item_color {
   height: 8px;
   width: 9px;
-  background-image: url("/img/img-imployees/Ellipse 3.svg");
+  background-image: url("/src/img/img-imployees/Ellipse 3.svg");
   margin: 0 4.5px 0 4.5px;
 }
 
@@ -1381,6 +1381,9 @@ input {
   }
 }
 
+.slider-line {
+  position: static;
+}
 @media (max-width: 768px) {
   .slider-line {
     display: flex;
@@ -1392,9 +1395,10 @@ input {
     transition: all ease 1s;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   .slider-line {
     position: static;
+    right: 0px;
   }
 }
 
