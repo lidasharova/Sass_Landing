@@ -4,27 +4,26 @@
 }
 
 .ico_play {
-  background-image: url('img/img-icons/ico-play.svg');
+  background-image: url('/src/img/img-icons/ico-play.svg');
   height: 19px;
   width: 18.5px;
   background-repeat: no-repeat;
   @extend %transition;
   &:hover {
-    background-image: url('img/img-icons/ico-play-add.svg');
+    background-image: url('/src/img/img-icons/ico-play-add.svg');
   }
 }
 
 .ico_phone {
-  background-image: url('img/img-icons/ico_phone.svg');
+  background-image: url('/src/img/img-icons/ico_phone.svg');
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
 }
 
 .ico_mail {
-  background-image: url('img/img-icons/ico_mail.svg');
+  background-image: url('/src/img/img-icons/ico_mail.svg');
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
-
 }
